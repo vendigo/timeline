@@ -37,7 +37,7 @@ public class DatePointsUtils {
 
         while (date.isBefore(to)) {
             dates.add(date);
-            date.plusMonths(1);
+            date = date.plusMonths(1);
         }
         return dates.stream();
     }
@@ -50,7 +50,7 @@ public class DatePointsUtils {
 
         while (date.isBefore(to)) {
             dates.add(date);
-            date.plusMonths(3);
+            date = date.plusMonths(3);
         }
         return dates.stream();
     }
@@ -61,7 +61,7 @@ public class DatePointsUtils {
         List<LocalDate> dates = new ArrayList<>();
         while (date.isBefore(to)) {
             dates.add(date);
-            date.plusYears(1);
+            date = date.plusYears(1);
         }
         return dates.stream();
     }

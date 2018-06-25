@@ -6,6 +6,7 @@ import java.time.LocalDate;
 
 @Value
 public class Rateplan {
+    String name;
     LocalDate start;
     LocalDate end;
     BillingCycle billingCycle;
